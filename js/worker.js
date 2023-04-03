@@ -57,7 +57,7 @@ self.onmessage = function(e) {
                 const closeCol = e.data.event.column;
                 const closeRow = e.data.event.row;
                 map[`s${closeCol}:${closeRow}`].selected = false;
-                console.log(map[`s${closeCol}:${closeRow}`]);
+
                 drawSquare(map[`s${closeCol}:${closeRow}`]);
             }
         break;
